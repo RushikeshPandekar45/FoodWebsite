@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu");
+            var y=document.getElementById("section");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="treadmark">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJpcl83fbioMLhiyUFtYEBwEOPAtnpfDctQw&usqp=CAU" alt="">
+           </div>
+           <a href="#" class="icon" onclick=myFunction()><i class="fa fa-bars"></i></a>
+           <nav>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#Service">Service</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact us</a></li>
+               </ul>
+           </nav>
+        </header>
+        <div class="menu" id="menu">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+           </ul>
+        </div>
+        <section id="section">
+            <div class="quote">
+                <h2>OPEN FOR DELIVERY & PICK UP</h2>
+                <p>GET IT WHILE<br> IT'S HOT</p>
+                <button>Order Online</button>
+            </div>
+        </section>
+        <div class="information">
+            <div class="Service" id="Service">
+                <h1>Service</h1>
+                <div class="options">
+                <div class="cards" id="card-1">
+                    <i class="fa fa-mobile" style="font-size:9vh;"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim maxime consectetur ea voluptas odio nulla cum unde nihil totam beatae!</p>
+                    <a href="#" onclick=learnMore1()>Learn More</a>
+                </div>
+                <div class="cards" id="card-2">
+                    <i class="fa fa-motorcycle" style="font-size:7vh;"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla enim laborum saepe aliquid et asperiores inventore vero eveniet sed eum.</p>
+                </div>
+                <div class="cards" id="card-3">
+                    <i class="fa fa-cc-visa" style="font-size:7vh;"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla enim laborum saepe aliquid et asperiores inventore vero eveniet sed eum.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+           <form action="">
+               <label>Name</label>
+               <input type="text" name="name" id="name" placeholder="Name">
+               <label>E-Mail</label>
+               <input type="email" name="Email" id="Email" placeholder="Email">
+               <label>Password</label>
+               <input type="password" name="pass" id="pass" placeholder="Password">
+               <input type="submit" value="submit">
+           </form>
+        </footer>
+    </div>
+    
+</body>
+</html>

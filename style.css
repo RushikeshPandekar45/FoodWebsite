@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    margin:auto;
+    align-items: center;
+    padding:10px;
+    font-size: 23px;
+    background-color: rgb(248, 97, 97);
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.treadmark img{
+    width:70px;
+    height: 70px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin:15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+.container::before{
+    content:'';
+    background: url('https://static.toiimg.com/photo/79811787.cms') no-repeat center center/cover;
+    background-attachment: fixed;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+section{
+    height: 85vh;
+}
+.quote{
+    text-align: center;
+    padding:10px;
+}
+.quote h2{
+    font-size: 30px;
+    color: #53e5e5;
+    margin:3px;
+}
+.quote p{
+    font-size: 50px;
+    font-weight: 1000;
+    color:rgb(242, 88 ,41);
+    margin:3px;
+}
+.quote button{
+   padding:10px;
+   font-size: 12px;
+   font-weight: 500;
+   width:100px;
+   margin:3px;
+}
+.icon{
+    display: none;
+    font-size: 40px;
+    color:white;
+    position: sticky;
+    top:15px;
+    z-index: 2;
+}
+.menu{
+    background-color: rgb(46, 43, 43);
+    width:100%;
+    padding:10px;
+    display:none;
+    position: absolute;
+}
+.menu ul li{
+   margin:15px;
+   list-style: none;
+}
+.menu ul li a{
+    color:white;
+    font-size:14px;
+    text-decoration: none;
+}
+
+.options{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    height:fit-content;
+    align-items: center;
+}
+.Service{
+    text-align: center;
+    padding:10px;
+}
+.cards{
+    text-align: center;
+    color:white;
+    font-size:1.5vw;
+    padding: 1vh;
+    width:300px;
+    margin:35px;
+}
+.cards:hover{
+    transition-property: background-color;
+    transition-timing-function: ease-out;
+    transition-duration: 1.5s;
+    background-color:powderblue;
+    transform: scale(1.199);
+}
+.cards i{
+    display: block;
+   text-shadow: 5px -2px lightsalmon;
+   transition-property: all;
+}
+.information{
+   background-color: rgb(230, 215, 193) ;
+   height: fit-content;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+footer label,input{
+    text-align: center;
+    margin:18px;
+    display:block;
+}
+footer input{
+    padding:3px;
+}
+footer input[type="submit"]{
+    border:none;
+    background-color: rgb(255, 148, 47);
+    width:50%;
+}
+@media (max-width:530px){
+    header{
+        font-size: 18px;
+    }
+    .quote h2{
+        font-size: 20px;
+    }
+    .quote p{
+        font-size: 35px;
+    }
+    .quote button{
+        font-size: 10px;
+        width:100px;
+    }
+}
+@media (max-width:480px){
+    nav{
+        display:none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .icon{
+        padding:13px;
+        display:inline;
+    }
+    .menu{
+        display:none;
+    }
+}
